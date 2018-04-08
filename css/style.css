@@ -1,0 +1,104 @@
+
+/*// GENERAL //*/
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+body {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    overflow-x: hidden; /*esconder el scroll*/
+}
+
+/*// HEADER //*/
+
+.header {
+    height: 100vh; /*Dispositivo del cual se abra*/
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.content {
+    max-width: 49rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+}
+
+.header-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+    .header-video video {
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+.header-overlay {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #153BAE;
+    z-index: 1;
+    opacity: .60;
+}
+
+.header-content {
+    z-index: 2;
+    display:block; 
+    width: 100%;
+    text-align: center;
+}
+    .header-content h1 {
+       font-size: 40px;
+       margin-bottom: 0;
+       
+    }
+
+    .header-content span {
+        font-size:1.5rem;
+        padding-bottom: 2rem;
+    }
+
+.hidden {
+    opacity:0;
+}
+
+.console-container {
+    font-family:Khula;
+    font-size:2em;
+    text-align:center;
+    display:inline-block;
+    position:relative;
+    color:white;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+}
+
+.console-underscore {
+    display:inline-block;
+    position:relative;
+    top:-0.14em;
+    left:10px;
+}
+
+
+@media (max-width: 960px){
+    .content {
+        padding: 0 3rem 0 3rem;
+    }
+}
